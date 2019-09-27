@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>GitHub Action Branding Viewer</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://unpkg.com/primer/build/build.css" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" type="text/css" media="screen" charset="utf-8">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <body>
+    <template id="gh-action-badge-template">
+      <div class="gh-action-badge" data-clipboard-text="icon-name">
+        <div class="gh-action-badge-img"><i data-feather="icon-name"></i></div>
+        <span class="gh-action-badge-name">icon-name</span>
+      </div>
+    </template>
+
+    <!-- Sample -->
+    <template>
+      <div class="gh-action-badge"><div class="gh-action-badge-img gh-action-badge--gray-dark"><i data-feather="circle"></i></div><span>circle</span></div>
+      <div class="gh-action-badge"><div class="gh-action-badge-img gh-action-badge--white"><i data-feather="circle"></i></div><span>circle</span></div>
+      <div class="gh-action-badge"><div class="gh-action-badge-img gh-action-badge--yellow"><i data-feather="circle"></i></div><span>circle</span></div>
+      <div class="gh-action-badge"><div class="gh-action-badge-img gh-action-badge--blue"><i data-feather="circle"></i></div><span>circle</span></div>
+      <div class="gh-action-badge"><div class="gh-action-badge-img gh-action-badge--green"><i data-feather="circle"></i></div><span>circle</span></div>
+      <div class="gh-action-badge"><div class="gh-action-badge-img gh-action-badge--orange"><i data-feather="circle"></i></div><span>circle</span></div>
+      <div class="gh-action-badge"><div class="gh-action-badge-img gh-action-badge--red"><i data-feather="circle"></i></div><span>circle</span></div>
+      <div class="gh-action-badge"><div class="gh-action-badge-img gh-action-badge--purple"><i data-feather="circle"></i></div><span>circle</span></div>
+    </template>
+
+    <div id="container">
+      <h1>GitHub Actions Branding Viewer</h1>
+      <select id="color-selector"></select>
+      <div id="showcase"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
