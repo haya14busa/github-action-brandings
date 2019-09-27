@@ -13,6 +13,7 @@
   align-items: center;
   width: 140px;
   margin: 15px 5px;
+  cursor: copy;
 }
 
 .gh-action-badge-img {
